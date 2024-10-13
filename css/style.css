@@ -3251,7 +3251,86 @@ img{
 	color:#ffffff;
 	margin-bottom:25px;
 	text-transform:uppercase;
+} 
+
+
+
+.about {
+font-family: Arial, sans-serif;
 }
+
+.about-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.about-section {
+padding: 50px 0;
+background-color: #f9f9f9;
+}
+
+.row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+}
+
+.about-image img {
+width: 250px;
+height: 250px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.about-content {
+max-width: 50%;
+}
+
+.about-content h2 {
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+.about-content p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.learn-more-btn {
+padding: 10px 20px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.features {
+display: flex;
+justify-content: space-between;
+}
+
+.feature-box {
+background-color: #2c3e50;
+color: white;
+padding: 20px;
+text-align: center;
+width: 30%;
+border-radius: 5px;
+}
+
+.feature-box h3 {
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.feature-box p {
+font-size: 14px;
+}
+
+
 
 /*** 
 
@@ -3743,88 +3822,155 @@ img{
 ====================================================================
 
 ***/
-
-.services-section-two{
-	position:relative;
-	padding:80px 0px 50px;
-	background-color:rgb(79, 106, 202);
+.services-section-two {
+    position: relative;
+    padding: 80px 0px 50px;
+    background-color: rgb(241, 236, 236);
 }
 
-.services-section-three{
-	position:relative;
-	margin-bottom:40px;
+.services-section-three {
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure spacing between boxes */
 }
 
-.services-section-three .inner-box{
-	position:relative;
-	padding:35px 25px;
-	border:1px solid rgba(255,255,255,0.10);
+.services-section-three .inner-box {
+    position: relative;
+    padding: 35px 25px;
+    border: 1px solid #ddd; /* Border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 300px; /* Ensure uniform box height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing for the content */
 }
 
-.services-section-three .inner-box h3{
-	position:relative;
-	font-size:18px;
-	font-weight:700;
-	color: #fff;
-	margin-bottom:5px;
-	font-family: 'Poppins', sans-serif;
+.services-section-three .inner-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.services-section-three .inner-box h3 a{
-	position:relative;
-	color:#ffffff;
-	transition:all 0.3s ease;
-	-moz-transition:all 0.3s ease;
-	-webkit-transition:all 0.3s ease;
-	-ms-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;
+.services-section-three .inner-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.services-section-three .inner-box h3 a:hover{
-	color:#ff4800;
+.services-section-three .inner-box h3 a {
+    color: black;
+    transition: all 0.3s ease;
 }
 
-.services-section-three .inner-box .title{
-	position:relative;
-	color:#ff4800;
-	font-size:16px;
+.services-section-three .inner-box h3 a:hover {
+    color: #ff4800;
 }
 
-.services-section-three .inner-box .image{
-	text-align:center;
-	margin:20px 0px;
+.services-section-three .inner-box .title {
+    color: #ff4800;
+    font-size: 16px;
 }
 
-.services-section-three .inner-box .text{
-	position:relative;
-	color:#fff;
-	font-size:16px;
-	line-height:1.8em;
-	margin-bottom:15px;
+.services-section-three .inner-box .text {
+    color: black;
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-bottom: 15px;
 }
 
-.services-section-three .inner-box .read-more{
-	position:relative;
-	color:#d9d9d9;
-	font-size:14px;
-	font-weight:700;
-	text-transform:uppercase;
-	transition:all 0.3s ease;
-	-moz-transition:all 0.3s ease;
-	-webkit-transition:all 0.3s ease;
-	-ms-transition:all 0.3s ease;
-	-o-transition:all 0.3s ease;
-	font-family: 'Poppins', sans-serif;
+.services-section-three .inner-box .read-more {
+    color: #d9d9d9;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
-.services-section-three .inner-box .read-more .icon{
-	position:relative;
-	margin-right:10px;
+.services-section-three .inner-box .read-more:hover {
+    color: #ff4800;
 }
 
-.services-section-three .inner-box .read-more:hover{
-	color:#ff4800;
+.services-section-three .inner-box .read-more .icon {
+    margin-right: 10px;
 }
+
+/* Set the boxes to be the same size */
+.services-section-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-section-three .inner-box {
+    width: 100%; /* Full width for small screens */
+    min-height: 300px; /* Set minimum height */
+}
+.services-section-two {
+    position: relative;
+    padding: 80px 0px 50px;
+    background-color: rgb(241, 236, 236);
+}
+
+.services-section-three {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal spacing between boxes */
+}
+
+.services-section-three .inner-box {
+    position: relative;
+    padding: 35px 25px;
+    border: 1px solid #ddd; /* Border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 300px; /* Ensure uniform height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services-section-three .inner-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.services-section-three .inner-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-section-three .inner-box .text {
+    color: black;
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Set the same height and width for all boxes */
+.services-section-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-section-three .inner-box {
+    width: 100%; /* Full width for small screens */
+    height: 300px; /* Fixed height */
+}
+
+
 
 /*** 
 
