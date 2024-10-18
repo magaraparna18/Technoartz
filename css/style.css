@@ -5457,6 +5457,7 @@ img{
 .sidebar-widget{
     position: relative;
     margin-bottom: 45px;
+	margin-right: 25px;
 }
 
 /*Sidebar Title*/
@@ -8176,14 +8177,15 @@ img{
   /* spacer ends */
   
   /* slider styles */
-  .sd_master_wrapper{
-	  position: relative;	
-	  max-width:900px;
-	  margin:0 auto;
-	  padding:0;
-	  border-radius:10px;
-	  z-index:9999;
-  }
+  .sd_master_wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 10px;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Box shadow added */
+}
   .sdtestBg3{
 	  height: 100%;
 	  width: 80%;
